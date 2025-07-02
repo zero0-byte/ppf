@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JK Perfumes</title>
+  
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#catalog" class="logo-link"><img src="JKJ.png" alt="Logo JK Perfumes" class="logo"></a>
+    <h1>Catálogo de Perfumes</h1>
+    <p>Uma coleção exclusiva de fragrâncias</p>
+    
+    <nav id="main-nav"></nav>
+  </header>
+
+  <main class="container" id="app-root">
+    </main>
+
+  <footer>
+    <p>&copy; 2025 JK Perfumes. Todos os direitos reservados.</p>
+  </footer>
+
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeRegisterModal()">&times;</span>
+      <h2>Crie sua Conta</h2>
+      <p>Preencha seus dados para começar.</p>
+      <form class="formulario" id="register-form-popup" style="box-shadow: none; padding: 1rem 0 0 0;">
+        
+        <input type="text" id="popup-user-name" placeholder="Nome Completo" required>
+        <input type="email" id="popup-user-email" placeholder="Seu melhor e-mail" required>
+        <input type="password" id="popup-user-password" placeholder="Crie uma senha" required>
+        <input type="text" id="popup-user-document" placeholder="CPF" required maxlength="14">
+        <hr style="border: 1px solid #eee; margin: 1rem 0;">
+        <input type="text" id="popup-user-zipcode" placeholder="CEP" required>
+        <input type="text" id="popup-user-address" placeholder="Endereço (Rua, Av, etc.)" required>
+        <div style="display: flex; gap: 1rem;">
+          <input type="text" id="popup-user-address-number" placeholder="Número" required style="width: 30%;">
+          <input type="text" id="popup-user-complement" placeholder="Complemento (opcional)" style="flex-grow: 1;">
+        </div>
+        <input type="text" id="popup-user-neighborhood" placeholder="Bairro" required>
+        <input type="text" id="popup-user-city-state" placeholder="Cidade - Estado" required>
+
+        <button type="submit" class="btn">Finalizar Cadastro</button>
+        <p id="popup-form-message" class="form-message" style="margin-top: 1rem;"></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
